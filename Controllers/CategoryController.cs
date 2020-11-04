@@ -28,7 +28,7 @@ namespace ProductCatalog.Controllers
         [HttpGet]
         public Category Get(int id)
         {
-            // Find() ainda não suporta AsNoTracking
+            // Find() ainda não suporta AsNoTracking // FirstOrDefault -> primeiro que achar ou nullo se não achar
             return _context.Categories.AsNoTracking().Where(x => x.Id == id).FirstOrDefault();
         }
 

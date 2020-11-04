@@ -11,14 +11,15 @@ namespace ProductCatalog.Repositories
     {
         private readonly StoreDataContext _context;
 
-        public ProductRepository(StoreDataContext context)
+        // injeção de dependência para abrir apenas 1 conexão -> StoreDataContext
+        public ProductRepository(StoreDataContext context) 
         {
             _context = context;
         }
 
         public IEnumerable<ListProductViewModel> Get()
         {
-            return _context
+            return _context //.Database.ExecuteSqlCommand
                 .Products
                 .Include(x => x.Category)
                 .Select(x => new ListProductViewModel

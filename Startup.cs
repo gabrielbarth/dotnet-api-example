@@ -14,6 +14,7 @@ namespace ProductCatalog
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            // ConfigureServices -> Pipline -> adicionar middlewares
             // services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
 
@@ -21,8 +22,8 @@ namespace ProductCatalog
 
             // resolvendo dependências:
             services.AddScoped<StoreDataContext, StoreDataContext>(); // cria apenas um item por requisição
+             // AddScoped -> nesse caso, verifica se já existe um StoreDataContext na memória e, caso não exista, cria um novo.
             services.AddTransient<ProductRepository, ProductRepository>();
-            // AddScoped -> nesse caso, verifica se já existe um DataContext na memória e, caso não exista, cria um novo.
             // AddTransient -> cria várias instâncias de conexões com o banco, sempre que solicitado.
 
 

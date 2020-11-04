@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabriel/Documents/react-projects/personal/ProductCatalog/ProductCatalog.csproj": {}
+    "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/ProductCatalog.csproj": {}
   },
   "projects": {
-    "/home/gabriel/Documents/react-projects/personal/ProductCatalog/ProductCatalog.csproj": {
+    "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/ProductCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Documents/react-projects/personal/ProductCatalog/ProductCatalog.csproj",
+        "projectUniqueName": "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/ProductCatalog.csproj",
         "projectName": "ProductCatalog",
-        "projectPath": "/home/gabriel/Documents/react-projects/personal/ProductCatalog/ProductCatalog.csproj",
+        "projectPath": "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/ProductCatalog.csproj",
         "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Documents/react-projects/personal/ProductCatalog/obj/",
+        "outputPath": "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gabriel/.nuget/NuGet/NuGet.Config"

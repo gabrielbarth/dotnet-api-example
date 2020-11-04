@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KhpZbQUyTkd+L/451m3q7ixDTapYG/2fgyT8AbQ2/wwvYoLPZokwaaEJa/TuEDc5WmpW8/guIX/yRK44rkJKnw==",
+  "dgSpecHash": "GvbofJRWMLFx1YWwWC0+CI9xzdp8irx8aFh0gc2HPLwE0s2NUc5HLBctP+CGEfWjVsLoqKgVJyCmBzz8SxbdNA==",
   "success": true,
-  "projectFilePath": "/home/gabriel/Documents/react-projects/personal/ProductCatalog/ProductCatalog.csproj",
+  "projectFilePath": "/home/gabriel/Documents/react-projects/personal/dotnet-api-example/ProductCatalog.csproj",
   "expectedPackageFiles": [
     "/home/gabriel/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512",
     "/home/gabriel/.nuget/packages/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

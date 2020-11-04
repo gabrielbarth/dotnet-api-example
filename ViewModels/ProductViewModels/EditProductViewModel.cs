@@ -14,6 +14,7 @@ namespace ProductCatalog.ViewModels.ProductViewModels
         public int CategoryId { get; set; }
 
 
+        // Criando uma query para melhorar a performance na busca de dados no BD.
         public void Validate()
         {
             AddNotifications(

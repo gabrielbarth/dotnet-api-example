@@ -15,9 +15,11 @@ namespace ProductCatalog.Data
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
-        {
+        { // aplica configs do productMap e CategoryMap
             builder.ApplyConfiguration(new ProductMap());
             builder.ApplyConfiguration(new CategoryMap());
         }
     }
 }
+// dotnet ef migrations add <migration-name>
+// dotnet ef database update

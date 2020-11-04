@@ -7,6 +7,7 @@ using ProductCatalog.ViewModels.ProductViewModels;
 
 namespace ProductCatalog.Controllers
 {
+    [Route("v1/products")]
     public class ProductController : Controller
     {
         private readonly ProductRepository _repository;
@@ -16,21 +17,21 @@ namespace ProductCatalog.Controllers
             _repository = repository;
         }
 
-        [Route("v1/products")]
+        // [Route("v1/products")]
         [HttpGet]
         public IEnumerable<ListProductViewModel> Get()
         {
             return _repository.Get();
         }
 
-        [Route("v1/products/{id}")]
+        [Route("{id}")]
         [HttpGet]
         public Product Get(int id)
         {
             return _repository.Get(id);
         }
 
-        [Route("v1/products")]
+        [Route("")]
         [HttpPost]
         public ResultViewModel Post([FromBody]EditorProductViewModel model)
         {
@@ -63,21 +64,21 @@ namespace ProductCatalog.Controllers
             };
         }
 
-        [Route("v2/products")]
-        [HttpPost]
-        public ResultViewModel Post([FromBody]Product product)
-        {
-            _repository.Save(product);
+        // [Route("v2/products")]
+        // [HttpPost]
+        // public ResultViewModel Post([FromBody]Product product)
+        // {
+        //     _repository.Save(product);
 
-            return new ResultViewModel
-            {
-                Success = true,
-                Message = "Produto cadastrado com sucesso!",
-                Data = product
-            };
-        }
+        //     return new ResultViewModel
+        //     {
+        //         Success = true,
+        //         Message = "Produto cadastrado com sucesso!",
+        //         Data = product
+        //     };
+        // }
 
-        [Route("v1/products")]
+        [Route("")]
         [HttpPut]
         public ResultViewModel Put([FromBody]EditorProductViewModel model)
         {

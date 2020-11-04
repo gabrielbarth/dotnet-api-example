@@ -7,3 +7,5 @@ namespace ProductCatalog.ViewModels.ProductViewModels
         public object Data { get; set; }
     }
 }
+
+// ViewModel -> Objetos de transporte para mostrar apenas o que se deseja a quem solicitou 
