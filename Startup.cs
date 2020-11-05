@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ProductCatalog.Data;
-using ProductCatalog.Repositories;
+using ProductCatalog.Application.Context;
+using ProductCatalog.Infra.Repositories;
 
 namespace ProductCatalog
 {
@@ -24,6 +24,8 @@ namespace ProductCatalog
             services.AddScoped<StoreDataContext, StoreDataContext>(); // cria apenas um item por requisição
              // AddScoped -> nesse caso, verifica se já existe um StoreDataContext na memória e, caso não exista, cria um novo.
             services.AddTransient<ProductRepository, ProductRepository>();
+
+            services.AddTransient<CategoryRepository, CategoryRepository>();
             // AddTransient -> cria várias instâncias de conexões com o banco, sempre que solicitado.
 
 

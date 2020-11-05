@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using ProductCatalog.Data.Maps;
-using ProductCatalog.Models;
+using ProductCatalog.Application.Context.Maps;
+using ProductCatalog.Domain.Models;
 
-namespace ProductCatalog.Data
+namespace ProductCatalog.Application.Context
 {
     public class StoreDataContext : DbContext
     {
